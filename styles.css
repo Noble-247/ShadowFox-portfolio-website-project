@@ -118,6 +118,34 @@ section:nth-child(odd) {
   background: var(--color-gray-200);
 }
 
+/* STYLE TITLE ATTRIBUTE CONTENT */
+[title] {
+  position: relative;
+}
+
+[title]:hover::after {
+  content: attr(title);
+  position: absolute;
+  background: var(--color-gray-900);
+  color: var(--color-gray-100);
+  padding: 0.5rem;
+  font-size: 0.8rem;
+  border-radius: var(--radius-3);
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 10;
+  -webkit-border-radius: var(--radius-3);
+  -moz-border-radius: var(--radius-3);
+  -ms-border-radius: var(--radius-3);
+  -o-border-radius: var(--radius-3);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
 /* GENERAL STYLES */
 .container {
   width: var(--container-width-lg);
@@ -181,7 +209,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 1000; /* Ensure it is above other content */
-  width: 100vw;
+  /* width: 100vw; */
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   -moz-backdrop-filter: blur(15px);
@@ -197,12 +225,12 @@ nav {
 .nav__logo {
   width: 2.4rem;
   aspect-ratio: 1/1;
-  /* overflow: hidden to prevent the image from stretching; */
+  overflow: hidden /* to prevent the image from stretching; */
   border-radius: 50%;
-  -webkit-border-radius: ;
-  -moz-border-radius: ;
-  -ms-border-radius: ;
-  -o-border-radius: ;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
 .nav__menu {
@@ -299,6 +327,7 @@ header {
   color: var(--color-gray-900);
   padding: 0.5rem;
   display: inline-block;
+  border: 1px solid var(--color-gray-300);
 
   border-radius: var(--radius-4);
   -webkit-border-radius: var(--radius-4);
@@ -599,4 +628,72 @@ header {
 
 .swiper-pagination-bullet {
   background: var(--color-primary);
+}
+
+/* CONTACT SECTION STYLES */
+section.contact {
+  background: var(--color-primary);
+}
+
+.contact__container {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  gap: 6rem;
+  width: 50%;
+}
+
+.contact__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.contact__list-item {
+  background: var(--color-gray-100);
+  color: var(--color-gray-900);
+  padding: 1rem;
+  display: block;
+  text-align: center;
+  font-size: 1.6rem;
+
+  border-radius: var(--radius-3);
+  -webkit-border-radius: var(--radius-3);
+  -moz-border-radius: var(--radius-3);
+  -ms-border-radius: var(--radius-3);
+  -o-border-radius: var(--radius-3);
+
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.contact__list-item:hover {
+  background: var(--color-gray-900);
+  color: var(--color-gray-100);
+}
+
+section.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+section.contact form input,
+textarea {
+  background: transparent;
+  color: var(--color-gray-100);
+  border: 1px solid var(--color-gray-300);
+  resize: none;  /* Prevent resizing of the textarea */
+  padding: 1rem;
+  border-radius: var(--radius-3);
+  -webkit-border-radius: var(--radius-3);
+  -moz-border-radius: var(--radius-3);
+  -ms-border-radius: var(--radius-3);
+  -o-border-radius: var(--radius-3);
+}
+
+section.contact form input::placeholder, textarea::placeholder {
+  color: var(--color-gray-300);
 }
