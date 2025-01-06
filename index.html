@@ -1,457 +1,446 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="My portfolio website for showcasing my projects and skills."
-    />
-    <meta name="author" content="Emmanuel Ekpobimi" />
-    <meta
-      name="keywords"
-      content="portfolio, web development, projects, skills"
-    />
-    <title>Home | Portfolio Website</title>
-    <link rel="icon" href="./assets/logo.png" type="image/png" />
 
-    <!-- GOOGLE FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="My portfolio website for showcasing my projects and skills." />
+  <meta name="author" content="Emmanuel Ekpobimi" />
+  <meta name="keywords" content="portfolio, web development, projects, skills" />
+  <title>Home | Portfolio Website</title>
+  <link rel="icon" href="./assets/logo.png" type="image/png" />
 
-    <!-- ICONSCOUT CDN -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
+  <!-- GOOGLE FONTS -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@600;700;800;900&display=swap" rel="stylesheet" />
 
-    <!-- LOCAL CSS -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <!-- NAVIGATION BAR SECTION -->
-    <nav>
-      <div class="container nav__container">
-        <a href="index.html" class="nav__logo">
-          <img src="./assets//logo.png" alt="Website logo" />
-        </a>
-        <ul class="nav__menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="nav__button">
-          <button class="nav__theme-btn">
-            <i class="uil uil-moon"></i>
-          </button>
-          <button class="nav__toggle-open">
-            <i class="uil uil-bars"></i>
-          </button>
-          <button class="nav__toggle-close">
-            <i class="uil uil-multiply"></i>
-          </button>
-        </div>
+  <!-- ICONSCOUT CDN -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+
+  <!-- SWIPER CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <!-- LOCAL CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- NAVIGATION BAR SECTION -->
+  <nav>
+    <div class="container nav__container">
+      <a href="index.html" class="nav__logo">
+        <img src="./assets//logo.png" alt="Website logo" />
+      </a>
+      <ul class="nav__menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav__button">
+        <button class="nav__theme-btn">
+          <i class="uil uil-moon"></i>
+        </button>
+        <button class="nav__toggle-open">
+          <i class="uil uil-bars"></i>
+        </button>
+        <button class="nav__toggle-close">
+          <i class="uil uil-multiply"></i>
+        </button>
       </div>
-    </nav>
-    <!-- END OF NAVIGATION BAR SECTION -->
+    </div>
+  </nav>
+  <!-- END OF NAVIGATION BAR SECTION -->
 
-    <!-- HOME SECTION -->
-    <header>
-      <div class="container header__container">
-        <article class="header__image">
-          <div><img src="./assets/header.jpg" alt="Profile Picture" /></div>
-        </article>
-        <article class="header__content">
-          <h4>Hi, I'm <span>Emmanuel Ekpobimi</span>. And I'll</h4>
-          <h1>Get your business <br />online the right way</h1>
-          <p>
-            Are you looking for a professional developer to put your business
-            online? You've come to the right place! I've helped hundreds of
-            business owners bring their ideas to life. Hire me today!
-          </p>
-          <div class="header__cta">
-            <a href="#contact" class="btn primary">Hire me</a>
-            <a href="#projects" class="btn">Portfolio</a>
-          </div>
-        </article>
-        <ul class="header__socials">
-          <li>
-            <a href="https://x.com" target="_blank"
-              ><i class="uil uil-twitter-alt"></i
-            ></a>
-          </li>
-          <li>
-            <a href="https://github.com/Noble-247" target="_blank">
-              <i class="uil uil-github-alt"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://linkedin.com" target="_blank">
-              <i class="uil uil-linkedin-alt"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://facebook.com" target="_blank">
-              <i class="uil uil-facebook-f"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
-    <!-- END OF HOME SECTION -->
-
-    <!-- ABOUT SECTION -->
-    <section class="about" id="about">
-      <div class="container about__container">
-        <div class="about__image">
-          <img src="./assets/about.jpg" alt="About Image" />
+  <!-- HOME SECTION -->
+  <header>
+    <div class="container header__container">
+      <article class="header__image">
+        <div><img src="./assets/header.jpg" alt="Profile Picture" /></div>
+      </article>
+      <article class="header__content">
+        <h4>Hi, I'm <span>Emmanuel Ekpobimi</span>. And I'll</h4>
+        <h1>Get your business <br />online the right way</h1>
+        <p>
+          Are you looking for a professional developer to put your business
+          online? You've come to the right place! I've helped hundreds of
+          business owners bring their ideas to life. Hire me today!
+        </p>
+        <div class="header__cta">
+          <a href="#contact" class="btn primary">Hire me</a>
+          <a href="#projects" class="btn">Portfolio</a>
         </div>
-        <div class="about__details">
-          <h1>About Me</h1>
-          <div class="about__cards">
-            <article class="about__card">
-              <i class="uil uil-award-alt"></i>
-              <h4>Experience</h4>
-              <small>4+ years</small>
-            </article>
-            <article class="about__card">
-              <i class="uil uil-swatchbook"></i>
-              <h4>Projects</h4>
-              <small>15+ completed</small>
-            </article>
-            <article class="about__card">
-              <i class="uil uil-users-alt"></i>
-              <h4>Clients</h4>
-              <small>10+ satisfied</small>
-            </article>
-          </div>
-          <p>
-            Building projects that solve real-world problems is my passion.
-            Being in the web development industry for over 4 years, I've worked
-            with clients from different parts of the world. I'm always ready to
-            take on new challenges and deliver top-notch solutions.
-          </p>
-          <p>
-            Hi there! I'm Emmanuel Ekpobimi from Nigeria. i am a a professional
-            frontend developer with a Higher National Diploma in Computer
-            Science I specialize in building responsive and user-friendly
-            websites using modern technologies like HTML, CSS, JavaScript,
-            React.js, Next.js, Node.js, etc . I'm passionate about creating
-            beautiful and functional websites that help businesses grow. Whether
-            you need a simple landing page or a complex web application, I can
-            help you bring your ideas to life. Let's work together to create
-            something amazing! Check out my resume below to learn more about my
-            skills and experience.
-          </p>
-          <a
-            href="./assets/Resume.pdf"
-            class="btn primary"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="uil uil-download-alt"></i>
-            Download Resume
+      </article>
+      <ul class="header__socials">
+        <li>
+          <a href="https://x.com" target="_blank"><i class="uil uil-twitter-alt"></i></a>
+        </li>
+        <li>
+          <a href="https://github.com/Noble-247" target="_blank">
+            <i class="uil uil-github-alt"></i>
           </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com" target="_blank">
+            <i class="uil uil-linkedin-alt"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://facebook.com" target="_blank">
+            <i class="uil uil-facebook-f"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+  <!-- END OF HOME SECTION -->
+
+  <!-- ABOUT SECTION -->
+  <section class="about" id="about">
+    <div class="container about__container">
+      <div class="about__image">
+        <img src="./assets/about.jpg" alt="About Image" />
+      </div>
+      <div class="about__details">
+        <h1>About Me</h1>
+        <div class="about__cards">
+          <article class="about__card">
+            <i class="uil uil-award-alt"></i>
+            <h4>Experience</h4>
+            <small>4+ years</small>
+          </article>
+          <article class="about__card">
+            <i class="uil uil-swatchbook"></i>
+            <h4>Projects</h4>
+            <small>15+ completed</small>
+          </article>
+          <article class="about__card">
+            <i class="uil uil-users-alt"></i>
+            <h4>Clients</h4>
+            <small>10+ satisfied</small>
+          </article>
         </div>
+        <p>
+          Building projects that solve real-world problems is my passion.
+          Being in the web development industry for over 4 years, I've worked
+          with clients from different parts of the world. I'm always ready to
+          take on new challenges and deliver top-notch solutions.
+        </p>
+        <p>
+          Hi there! I'm Emmanuel Ekpobimi from Nigeria. i am a a professional
+          frontend developer with a Higher National Diploma in Computer
+          Science I specialize in building responsive and user-friendly
+          websites using modern technologies like HTML, CSS, JavaScript,
+          React.js, Next.js, Node.js, etc . I'm passionate about creating
+          beautiful and functional websites that help businesses grow. Whether
+          you need a simple landing page or a complex web application, I can
+          help you bring your ideas to life. Let's work together to create
+          something amazing! Check out my resume below to learn more about my
+          skills and experience.
+        </p>
+        <a href="./assets/Resume.pdf" class="btn primary" target="_blank" rel="noopener noreferrer">
+          <i class="uil uil-download-alt"></i>
+          Download Resume
+        </a>
       </div>
-    </section>
-    <!-- END OF ABOUT SECTION -->
+    </div>
+  </section>
+  <!-- END OF ABOUT SECTION -->
 
-    <!-- SERVICES SECTION -->
-    <section class="services" id="services">
-      <h1>Services</h1>
-      <p>
-        I offer a wide range of services to help you bring your ideas to life.
-        Whether you need a simple landing page or a complex web application, I
-        can help you create something amazing.
-      </p>
-      <div class="container services__container">
-        <ul class="services__left">
-          <li class="service__item design active">
-            <span><i class="uil uil-palette"></i></span>
-            <div>
-              <h4>Web Design</h4>
-              <p>8+ Projects</p>
-            </div>
-          </li>
-          <li class="service__item development">
-            <span><i class="uil uil-mobile-android"></i></span>
-            <div>
-              <h4>Web Development</h4>
-              <p>10+ Projects</p>
-            </div>
-          </li>
-          <li class="service__item support">
-            <span><i class="uil uil-chat-bubble-user"></i></span>
-            <div>
-              <h4>Support</h4>
-              <p>15+ Projects</p>
-            </div>
-          </li>
-        </ul>
-        <article class="services__right">
-          <h3>Web Design</h3>
-          <p>
-            I specialize in creating beautiful and user-friendly websites that
-            help businesses grow. Whether you need a simple landing page or a
-            complex web application, I can help you bring your ideas to life.
-          </p>
-          <p>
-            I use modern technologies like HTML, CSS, JavaScript, React.js,
-            Next.js, Node.js, etc. to create responsive and interactive websites
-            that look great on all devices. Let's work together to create
-            something amazing!
-          </p>
-        </article>
-      </div>
-    </section>
-    <!-- END OF SERVICES SECTION -->
+  <!-- SERVICES SECTION -->
+  <section class="services" id="services">
+    <h1>Services</h1>
+    <p>
+      I offer a wide range of services to help you bring your ideas to life.
+      Whether you need a simple landing page or a complex web application, I
+      can help you create something amazing.
+    </p>
+    <div class="container services__container">
+      <ul class="services__left">
+        <li class="service__item design active">
+          <span><i class="uil uil-palette"></i></span>
+          <div>
+            <h4>Web Design</h4>
+            <p>8+ Projects</p>
+          </div>
+        </li>
+        <li class="service__item development">
+          <span><i class="uil uil-mobile-android"></i></span>
+          <div>
+            <h4>Web Development</h4>
+            <p>10+ Projects</p>
+          </div>
+        </li>
+        <li class="service__item support">
+          <span><i class="uil uil-chat-bubble-user"></i></span>
+          <div>
+            <h4>Support</h4>
+            <p>15+ Projects</p>
+          </div>
+        </li>
+      </ul>
+      <article class="services__right">
+        <h3>Web Design</h3>
+        <p>
+          I specialize in creating beautiful and user-friendly websites that
+          help businesses grow. Whether you need a simple landing page or a
+          complex web application, I can help you bring your ideas to life.
+        </p>
+        <p>
+          I use modern technologies like HTML, CSS, JavaScript, React.js,
+          Next.js, Node.js, etc. to create responsive and interactive websites
+          that look great on all devices. Let's work together to create
+          something amazing!
+        </p>
+      </article>
+    </div>
+  </section>
+  <!-- END OF SERVICES SECTION -->
 
-    <!-- PROJECTS SECTION -->
-    <section class="projects" id="projects">
-      <h1>My Recent Projects</h1>
-      <p>
-        Here are some of the projects I've worked on recently. I can help you
-        bring your ideas to life.
-      </p>
-      <div class="container projects__container" id="projects__container">
-        <!-- Projects Go Here -->
-        <article class="project">
-          <div class="project__image">
-            <img
-              src="./assets/computer-science-department-blog.PNG"
-              alt="Blog Project Image"
-            />
-          </div>
-          <h4>Computer Science Department Blog</h4>
-          <p>
-            A blog for the computer science department of a university. The blog
-            contains articles, news, and events related to computer science.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://com-sci-department-blog.great-site.net/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
+  <!-- PROJECTS SECTION -->
+  <section class="projects" id="projects">
+    <h1>My Recent Projects</h1>
+    <p>
+      Here are some of the projects I've worked on recently. I can help you
+      bring your ideas to life.
+    </p>
+    <div class="container projects__container" id="projects__container">
+      <!-- Projects Go Here -->
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/computer-science-department-blog.PNG" alt="Blog Project Image" />
+        </div>
+        <h4>Computer Science Department Blog</h4>
+        <p>
+          A blog for the computer science department of a university. The blog
+          contains articles, news, and events related to computer science.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://com-sci-department-blog.great-site.net/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
 
-        <article class="project">
-          <div class="project__image">
-            <img src="./assets/evogym.PNG" alt="Evo Gym Project Image" />
-          </div>
-          <h4>Evo Gym</h4>
-          <p>
-            A website for a gym that offers fitness classes, personal training,
-            and nutrition coaching. The website includes a class schedule,
-            trainer profiles, and a contact form.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://cool-evogym.netlify.app/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/evogym.PNG" alt="Evo Gym Project Image" />
+        </div>
+        <h4>Evo Gym</h4>
+        <p>
+          A website for a gym that offers fitness classes, personal training,
+          and nutrition coaching. The website includes a class schedule,
+          trainer profiles, and a contact form.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://cool-evogym.netlify.app/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
 
-        <article class="project">
-          <div class="project__image">
-            <img
-              src="./assets/xplorers-computer-academy.PNG"
-              alt="Xplorers Computer Academy Project Image"
-            />
-          </div>
-          <h4>Xplorers Computer Academy Website</h4>
-          <p>
-            A website for a computer academy that offers computer training, web
-            development, and digital marketing courses. The website includes
-            course details, instructor profiles, and a contact form.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://xplorers-computer-academy.netlify.app/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/xplorers-computer-academy.PNG" alt="Xplorers Computer Academy Project Image" />
+        </div>
+        <h4>Xplorers Computer Academy Website</h4>
+        <p>
+          A website for a computer academy that offers computer training, web
+          development, and digital marketing courses. The website includes
+          course details, instructor profiles, and a contact form.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://xplorers-computer-academy.netlify.app/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
 
-        <article class="project">
-          <div class="project__image">
-            <img
-              src="./assets/xplorers-fitness-website.PNG"
-              alt="Xplorers Gym Project Image"
-            />
-          </div>
-          <h4>Xplorers Gym Website</h4>
-          <p>
-            A website for a gym that offers fitness classes, personal training,
-            and nutrition coaching. The website includes a class schedule,
-            trainer profiles, and a contact form.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://xplorers-gym.vercel.app/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/xplorers-fitness-website.PNG" alt="Xplorers Gym Project Image" />
+        </div>
+        <h4>Xplorers Gym Website</h4>
+        <p>
+          A website for a gym that offers fitness classes, personal training,
+          and nutrition coaching. The website includes a class schedule,
+          trainer profiles, and a contact form.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://xplorers-gym.vercel.app/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
 
-        <article class="project">
-          <div class="project__image">
-            <img
-              src="./assets/github_finder_app.PNG"
-              alt="Github Search App Project Image"
-            />
-          </div>
-          <h4>Github Search App</h4>
-          <p>
-            A web application that allows users to search for Github users and
-            view their profile information. Users can also view the user's
-            repositories and followers.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://coolgithub-search.netlify.app/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/github_finder_app.PNG" alt="Github Search App Project Image" />
+        </div>
+        <h4>Github Search App</h4>
+        <p>
+          A web application that allows users to search for Github users and
+          view their profile information. Users can also view the user's
+          repositories and followers.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://coolgithub-search.netlify.app/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
 
-        <article class="project">
-          <div class="project__image">
-            <img
-              src="./assets/picture-and-video-search-app.PNG"
-              alt="Picture and Video Search App Project Image"
-            />
-          </div>
-          <h4>Picture and Video Search App</h4>
-          <p>
-            A web application that allows users to search for pictures and
-            videos using the Pixabay API. Users can view the pictures and videos
-            in a modal.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://cool-picture-and-video-search.netlify.app/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/picture-and-video-search-app.PNG" alt="Picture and Video Search App Project Image" />
+        </div>
+        <h4>Picture and Video Search App</h4>
+        <p>
+          A web application that allows users to search for pictures and
+          videos using the Pixabay API. Users can view the pictures and videos
+          in a modal.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://cool-picture-and-video-search.netlify.app/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
 
-        <article class="project">
-          <div class="project__image">
-            <img
-              src="./assets/cool-calculator-app.PNG"
-              alt="Calculator App Project Image"
-            />
-          </div>
-          <h4>Calculator App</h4>
-          <p>
-            A simple calculator app that allows users to perform basic
-            arithmetic operations like addition, subtraction, multiplication,
-            and division.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://cool-calculator-app.netlify.app/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/cool-calculator-app.PNG" alt="Calculator App Project Image" />
+        </div>
+        <h4>Calculator App</h4>
+        <p>
+          A simple calculator app that allows users to perform basic
+          arithmetic operations like addition, subtraction, multiplication,
+          and division.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://cool-calculator-app.netlify.app/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
 
-        <article class="project">
-          <div class="project__image">
-            <img src="./assets/todo-app.PNG" alt="Todos App Project Image" />
-          </div>
-          <h4>Todos App</h4>
-          <p>
-            A simple todo app that allows users to add, delete, and mark todos
-            as completed.
-          </p>
-          <div class="project__cta">
-            <a
-              href="https://github.com/Noble-247"
-              class="btn sm primary"
-              target="_blank"
-              >View Code</a
-            >
-            <a
-              href="https://unique-todo-app.netlify.app/"
-              class="btn sm"
-              target="_blank"
-              >View Project</a
-            >
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- END OF PROJECT SECTION -->
+      <article class="project">
+        <div class="project__image">
+          <img src="./assets/todo-app.PNG" alt="Todos App Project Image" />
+        </div>
+        <h4>Todos App</h4>
+        <p>
+          A simple todo app that allows users to add, delete, and mark todos
+          as completed.
+        </p>
+        <div class="project__cta">
+          <a href="https://github.com/Noble-247" class="btn sm primary" target="_blank">View Code</a>
+          <a href="https://unique-todo-app.netlify.app/" class="btn sm" target="_blank">View Project</a>
+        </div>
+      </article>
+    </div>
+  </section>
+  <!-- END OF PROJECT SECTION -->
 
-    <script src="./data.js"></script>
-    <script src="./app.js"></script>
-  </body>
+  <!-- TESTIMONIAL SECTION -->
+  <section class="swiper">
+    <h1>What my clients say</h1>
+    <p>
+      Here are some testimonials from my clients. I always strive to provide
+      top-notch services and exceed my client's expectations.
+    </p>
+    <div class="swiper-wrapper">
+      <figure class="swiper-slide">
+        <figcaption>
+          "Emmanuel did an outstanding job on our website redesign. His attention to detail and dedication to delivering
+          a high-quality product were evident throughout the project. We couldn't be happier with the results and highly
+          recommend his services!"
+        </figcaption>
+        <div class="swiper-client">
+          <div class="swiper__client-avatar">
+            <img src="./assets/avatar1.jpg" alt="Client One">
+          </div>
+          <div class="swiper__client-details">
+            <h4>Nana Ama McBrown</h4>
+            <small>CEO, Evo Gym</small>
+          </div>
+      </figure>
+
+      <figure class="swiper-slide">
+        <figcaption>
+          "Emmanuel is a talented developer who is passionate about his work. He was able to take our ideas and turn
+          them into a beautiful website that exceeded our expectations. We are thrilled with the results and look
+          forward to working with him again in the future."
+        </figcaption>
+        <div class="swiper-client">
+          <div class="swiper__client-avatar">
+            <img src="./assets/avatar2.jpg" alt="Client Two">
+          </div>
+          <div class="swiper__client-details">
+            <h4>John Doe</h4>
+            <small>CEO, Xplorers Computer Academy</small>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="swiper-slide">
+        <figcaption>
+          "Emmanuel is a true professional who goes above and beyond to deliver exceptional results. He was able to take
+          our outdated website and turn it into a modern, user-friendly site that has helped us attract new customers.
+          We are extremely happy with his work and highly recommend him to anyone looking for a talented developer."
+        </figcaption>
+        <div class="swiper-client">
+          <div class="swiper__client-avatar">
+            <img src="./assets/avatar3.jpg" alt="Client Three">
+          </div>
+          <div class="swiper__client-details">
+            <h4>Glen Johnson</h4>
+            <small>CEO, Xplorers Gym</small>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="swiper-slide">
+        <figcaption>
+          "Emmanuel is a talented developer who is passionate about his work. He was able to take our ideas and turn
+          them into a beautiful blog that exceeded our expectations. We are thrilled with the results and look forward
+          to working with him again in the future."
+        </figcaption>
+        <div class="swiper-client">
+          <div class="swiper__client-avatar">
+            <img src="./assets/avatar4.jpg" alt="Client Four">
+          </div>
+          <div class="swiper__client-details">
+            <h4>Grace Brown</h4>
+            <small>HOD, Computer Science Dept, CEA College</small>
+          </div>
+        </div>
+      </figure>
+
+      <figure class="swiper-slide">
+        <figcaption>
+          "Emmanuel is a true professional who goes above and beyond to deliver exceptional results. He was able to take
+          our outdated website and turn it into a modern, user-friendly site that has helped us attract new customers.
+          We are extremely happy with his work and highly recommend him to anyone looking for a talented developer."
+        </figcaption>
+        <div class="swiper-client">
+          <div class="swiper__client-avatar">
+            <img src="./assets/avatar5.jpg" alt="Client Five">
+          </div>
+          <div class="swiper__client-details">
+            <h4>Grace Johnson</h4>
+            <small>Makeup Artist</small>
+          </div>
+        </div>
+      </figure>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </section>
+  <!-- END OF TESTIMONIAL SECTION -->
+
+
+  <!-- SWIPER JAVASCRIPT CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- LOCAL JAVASCRIPT -->
+  <script src="./data.js"></script>
+  <script src="./app.js"></script>
+</body>
+
 </html>

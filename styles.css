@@ -480,6 +480,7 @@ header {
 
 /* PROJECT SECTION STYLES */
 .projects__container {
+  margin-top: 4rem;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   gap: 3.5rem;
@@ -536,4 +537,66 @@ header {
   gap: 1rem;
   margin-bottom: 1rem;
   justify-content: center;
+}
+
+/* TESTIMONIAL SECTION STYLES */
+.swiper {
+  width: var(--container-width-lg);
+  margin: 9rem auto;
+}
+
+.swiper-wrapper {
+  margin-top: 4rem;
+
+  /* Swiper pagination style */
+  padding-bottom: 4rem;
+  height: fit-content;
+}
+
+.swiper-slide {
+  background: var(--color-gray-200);
+  border: 2px solid transparent;
+  padding: 1rem 1.2rem;
+  height: fit-content;
+  cursor: default;
+  user-select: none;
+
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+
+.swiper-slide:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.swiper-client {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.swiper__client-avatar {
+  width: 2.5rem;
+  aspect-ratio: 1/1;
+  overflow: hidden;
+
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+  background: var(--color-primary);
 }

@@ -12,11 +12,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     serviceDetails.forEach((detail) => {
       detail.innerHTML = `
-        <h3>${details.title}</h3>
-        ${details.description
-          .map((paragraph) => `<p>${paragraph}</p>`)
-          .join("")}
-      `;
+          <h3>${details.title}</h3>
+          ${details.description.map((paragraph) => `<p></p>`).join("")}
+        `;
     });
   }
 
@@ -33,5 +31,28 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
       getService(serviceClass);
     });
+  });
+
+  /* SWIPER JS INITIALIZER - TESTIMONIAL SECTION */
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    breakpoints: {
+      600: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+      },
+      1024: {
+        slidesPerView: 3,
+      },
+    },
   });
 });
