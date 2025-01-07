@@ -55,4 +55,24 @@ document.addEventListener("DOMContentLoaded", function (event) {
       },
     },
   });
+
+  /* NAVIGATION TOGGLE FOR SMALL SCREENS */
+  const navMenu = document.querySelector(".nav__menu");
+  const navOpenBtn = document.querySelector(".nav__toggle-open");
+  const navCloseBtn = document.querySelector(".nav__toggle-close");
+
+  function openNavHandler() {
+    navMenu.style.display = "flex";
+    navOpenBtn.style.display = "none";
+    navCloseBtn.style.display = "inline-block";
+  }
+
+  function closeNavHandler() {
+    navMenu.style.display = "none";
+    navOpenBtn.style.display = "inline-block";
+    navCloseBtn.style.display = "none";
+  }
+
+  navOpenBtn.addEventListener("click", openNavHandler);
+  navCloseBtn.addEventListener("click", closeNavHandler);
 });
