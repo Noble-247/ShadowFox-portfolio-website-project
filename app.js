@@ -1,3 +1,4 @@
+// PURPOSE: MAIN JAVASCRIPT FILE FOR THE PROJECT
 document.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM fully loaded and parsed");
 
@@ -5,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
   const servicesButtons = document.querySelectorAll(".service__item");
   const serviceDetails = document.querySelectorAll(".services__right");
 
+  // Get data for the services section in the markup
   function getService(category) {
     const details = servicesData.find(
       (item) => item.category.toLowerCase() === category.toLowerCase()
@@ -13,7 +15,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     serviceDetails.forEach((detail) => {
       detail.innerHTML = `
           <h3>${details.title}</h3>
-          ${details.description.map((paragraph) => `<p></p>`).join("")}
+          ${details.description
+            .map((paragraph) => "<p>" + paragraph + "</p>")
+            .join("")}
         `;
     });
   }
@@ -32,6 +36,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
       getService(serviceClass);
     });
   });
+
+  // Get the first service on page load
+  getService("design");
 
   /* SWIPER JS INITIALIZER - TESTIMONIAL SECTION */
   const swiper = new Swiper(".swiper", {
@@ -75,4 +82,14 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
   navOpenBtn.addEventListener("click", openNavHandler);
   navCloseBtn.addEventListener("click", closeNavHandler);
+
+  // Close nav menu when a link is clicked on small screens
+  const navLinks = document.querySelectorAll("a");
+  navLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (window.innerWidth <= 768) {
+        closeNavHandler();
+      }
+    });
+  });
 });
