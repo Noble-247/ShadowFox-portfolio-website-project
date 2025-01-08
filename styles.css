@@ -11,7 +11,13 @@
 
   --transition: all 300ms ease-in-out;
 
+  /* Colors */
+
+  /* --primary-hue: 222; */
+  /* --primary-hue: 280; */
+  /* --primary-hue: 185; */
   --primary-hue: 358;
+
   --color-primary: hsl(var(--primary-hue), 87%, 44%);
   --color-nav-bg: hsl(var(--primary-hue) 0%, 100%, 0.4);
   --color-gray-100: hsl(var(--primary-hue), 0%, 100%);
@@ -58,6 +64,24 @@ body {
   background: var(--color-gray-100);
   color: var(--color-gray-800);
   font-weight: 300;
+}
+
+/* Custom scroll bar */
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary-hue), 87%, 64%)
 }
 
 img,
@@ -243,13 +267,14 @@ nav {
 .nav__logo {
   width: 2.4rem;
   aspect-ratio: 1/1;
-  overflow: hidden
-    /* to prevent the image from stretching; */
-    border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
+  overflow: hidden;
+  /*topreventtheimagefromstretching:;
+  */
+  border-radius: 7rem 7rem;
+  -webkit-border-radius: 7rem 7rem;
+  -moz-border-radius: 7rem 7rem;
+  -ms-border-radius: 7rem 7rem;
+  -o-border-radius: 7rem 7rem;
 }
 
 .nav__menu {
@@ -290,16 +315,16 @@ header {
 
 .header__image {
   width: 14rem;
-  aspect-ratio: 3/4;
+  /*aspect-ratio: 3/4;
+  */
   overflow: hidden;
   margin-right: 17rem;
   margin-inline: auto;
-
-  border-radius: 7rem 7rem var(--radius-2) var(--radius-2);
-  -webkit-border-radius: 7rem 7rem var(--radius-2) var(--radius-2);
-  -moz-border-radius: 7rem 7rem var(--radius-2) var(--radius-2);
-  -ms-border-radius: 7rem 7rem var(--radius-2) var(--radius-2);
-  -o-border-radius: 7rem 7rem var(--radius-2) var(--radius-2);
+  border-radius: 7rem 7rem;
+  -webkit-border-radius: 7rem 7rem;
+  -moz-border-radius: 7rem 7rem;
+  -ms-border-radius: 7rem 7rem;
+  -o-border-radius: 7rem 7rem;
 }
 
 .header__image img {
@@ -347,18 +372,16 @@ header {
   padding: 0.5rem;
   display: inline-block;
   border: 1px solid var(--color-gray-300);
-
   border-radius: var(--radius-4);
   -webkit-border-radius: var(--radius-4);
   -moz-border-radius: var(--radius-4);
   -ms-border-radius: var(--radius-4);
   -o-border-radius: var(--radius-4);
-
   transition: var(--transition);
-  -webkit-transition: var(--transition);
-  -moz-transition: var(--transition);
-  -ms-transition: var(--transition);
-  -o-transition: var(--transition);
+  -webkit-transition: ;
+  -moz-transition: ;
+  -ms-transition: ;
+  -o-transition: ;
 }
 
 .header__socials a:hover {
@@ -925,7 +948,7 @@ footer {
 
   .header__image {
     width: 50vw;
-    aspect-ratio: 4/5;
+    /* aspect-ratio: 4/5; */
   }
 
 

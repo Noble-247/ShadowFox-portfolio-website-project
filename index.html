@@ -21,6 +21,9 @@
   <!-- SWIPER CDN -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+  <!-- ANIMATE-ON-SCROLL CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- LOCAL CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -57,10 +60,10 @@
   <!-- HOME SECTION -->
   <header>
     <div class="container header__container">
-      <article class="header__image">
+      <article class="header__image" data-aos="fade-down" data-aos-delay="100">
         <div><img src="./assets/header.jpg" alt="Profile Picture" /></div>
       </article>
-      <article class="header__content">
+      <article class="header__content" data-aos="fade-up" data-aos-delay="200">
         <h4>Hi, I'm <span>Emmanuel Ekpobimi</span>. And I'll</h4>
         <h1>Get your business <br />online the right way</h1>
         <p>
@@ -103,7 +106,7 @@
       <div class="about__image">
         <img src="./assets/about.jpg" alt="About Image" />
       </div>
-      <div class="about__details">
+      <div class="about__details" data-aos="zoom-in" data-aos-delay="300">
         <h1>About Me</h1>
         <div class="about__cards">
           <article class="about__card">
@@ -122,12 +125,6 @@
             <small>10+ satisfied</small>
           </article>
         </div>
-        <p>
-          Building projects that solve real-world problems is my passion.
-          Being in the web development industry for over 4 years, I've worked
-          with clients from different parts of the world. I'm always ready to
-          take on new challenges and deliver top-notch solutions.
-        </p>
         <p>
           Hi there! I'm Emmanuel Ekpobimi from Nigeria. i am a a professional
           frontend developer with a Higher National Diploma in Computer
@@ -181,7 +178,7 @@
           </div>
         </li>
       </ul>
-      <article class="services__right">
+      <article class="services__right" data-aos="zoom-in" data-aos-delay=" 300">
         <!-- The markup and content here will be loaded via JavaScript -->
 
       </article>
@@ -198,7 +195,7 @@
     </p>
     <div class="container projects__container" id="projects__container">
       <!-- Projects Go Here -->
-      <article class="project">
+      <article class="project" data-aos="flip-left">
         <div class="project__image">
           <img src="./assets/computer-science-department-blog.PNG" alt="Blog Project Image" />
         </div>
@@ -213,7 +210,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-aos="flip-right">
         <div class="project__image">
           <img src="./assets/evogym.PNG" alt="Evo Gym Project Image" />
         </div>
@@ -229,7 +226,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-aos="flip-left">
         <div class="project__image">
           <img src="./assets/xplorers-computer-academy.PNG" alt="Xplorers Computer Academy Project Image" />
         </div>
@@ -245,7 +242,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-aos="flip-right">
         <div class="project__image">
           <img src="./assets/xplorers-fitness-website.PNG" alt="Xplorers Gym Project Image" />
         </div>
@@ -261,7 +258,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-aos="flip-left">
         <div class="project__image">
           <img src="./assets/github_finder_app.PNG" alt="Github Search App Project Image" />
         </div>
@@ -277,7 +274,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-aos="flip-right">
         <div class="project__image">
           <img src="./assets/picture-and-video-search-app.PNG" alt="Picture and Video Search App Project Image" />
         </div>
@@ -293,7 +290,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-aos="flip-left">
         <div class="project__image">
           <img src="./assets/cool-calculator-app.PNG" alt="Calculator App Project Image" />
         </div>
@@ -309,7 +306,7 @@
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-aos="flip-right">
         <div class="project__image">
           <img src="./assets/todo-app.PNG" alt="Todos App Project Image" />
         </div>
@@ -428,22 +425,22 @@
   <section class="contact" id="contact">
     <div class="container contact__container">
       <ul class="contact__list">
-        <li title="Send us a mail">
+        <li title="Send us a mail" data-aos="fade-up" data-aos-delay="100">
           <a href="mailto:emmatech.digitalsolutions@gmail.com" class="contact__list-item" target="_blank">
             <i class="uil uil-envelope"></i>
           </a>
         </li>
-        <li title="Call us">
+        <li title="Call us" data-aos="fade-up" data-aos-delay="200">
           <a href="tel:+2348039356492" class="contact__list-item" target="_blank">
             <i class="uil uil-phone"></i>
           </a>
         </li>
-        <li title="Send us a message on whatsapp">
+        <li title="Send us a message on whatsapp" data-aos="fade-up" data-aos-delay="300">
           <a href="https://wa.me/+2348039356492" class="contact__list-item" target="_blank">
             <i class="uil uil-whatsapp"></i>
           </a>
         </li>
-        <li title="Send us a message on facebook messenger">
+        <li title="Send us a message on facebook messenger" data-aos="fade-up" data-aos-delay="400">
           <a href="https://web.facebook.com/messages/e2ee/t/27982789914699516/" class="contact__list-item"
             target="_blank">
             <i class="uil uil-facebook-messenger-alt"></i>
@@ -451,7 +448,7 @@
         </li>
       </ul>
 
-      <form action="https://formspree.io/f/mwppwryw" method="post">
+      <form action="https://formspree.io/f/mwppwryw" method="post" data-aos="fade-up" data-aos-delay="300">
         <input type="text" name="name" placeholder="Your Full Name" pattern="[A-Za-z\s]+" required />
         <input type="email" name="email" placeholder="Your Email Address" required />
         <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
@@ -502,6 +499,17 @@
 
   <!-- SWIPER JAVASCRIPT CDN -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- ANIMATE-ON-SCROLL JAVASCRIPT CDN -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 100,
+        duration: 1500,
+      }
+    );
+  </script>
 
   <!-- LOCAL JAVASCRIPT -->
   <script src="./data.js"></script>
