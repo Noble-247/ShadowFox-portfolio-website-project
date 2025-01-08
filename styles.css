@@ -156,33 +156,7 @@ section:nth-child(odd) {
   background: var(--color-gray-200);
 }
 
-/* STYLE TITLE ATTRIBUTE CONTENT */
-[title] {
-  position: relative;
-}
 
-[title]:hover::after {
-  content: attr(title);
-  position: absolute;
-  background: #000;
-  color: #fff;
-  padding: 0.5rem;
-  font-size: 0.5rem;
-  border-radius: var(--radius-3);
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  white-space: nowrap;
-  z-index: 10;
-  -webkit-border-radius: var(--radius-3);
-  -moz-border-radius: var(--radius-3);
-  -ms-border-radius: var(--radius-3);
-  -o-border-radius: var(--radius-3);
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-}
 
 /* GENERAL STYLES */
 .container {
