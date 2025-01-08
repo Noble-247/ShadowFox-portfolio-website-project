@@ -92,4 +92,26 @@ document.addEventListener("DOMContentLoaded", function (event) {
       }
     });
   });
+
+  /* TOGGLE DARK AND LIGHT (default) THEME FUNCTIONALITY */
+  const themeToggle = document.querySelector(".nav__theme-btn");
+  const body = document.querySelector("body");
+
+  themeToggle.addEventListener("click", () => {
+    body.classList.toggle("dark");
+    if (body.classList.contains("dark")) {
+      themeToggle.innerHTML = `<i class="uil uil-sun"></i>`;
+      // Save theme preference to local storage
+      localStorage.setItem("theme", "dark");
+    } else {
+      themeToggle.innerHTML = `<i class="uil uil-moon"></i>`;
+      // Save theme preference to local storage
+      localStorage.setItem("theme", "");
+    }
+  });
+
+  // Get the theme preference from local storage on page load
+  window.addEventListener("load", () => {
+    body.classList.add(localStorage.getItem("theme"));
+  });
 });
