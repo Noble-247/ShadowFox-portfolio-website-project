@@ -114,4 +114,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
   window.addEventListener("load", () => {
     body.classList.add(localStorage.getItem("theme"));
   });
+
+  // Display the current date-year in the footer copywrite information
+  const footerYear = document.querySelector("#date-year");
+  const currentYear = new Date().getFullYear();
+  footerYear.textContent = currentYear;
 });
