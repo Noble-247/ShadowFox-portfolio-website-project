@@ -863,13 +863,13 @@ footer {
 
   .nav__menu li {
     transform: rotateY(90deg);
-    -webkit-transform: rotateY(90deg);
-    -moz-transform: rotateY(90deg);
-    -ms-transform: rotateY(90deg);
-    -o-transform: rotateY(90deg);
+    -webkit-transform: ;
+    -moz-transform: ;
+    -ms-transform: ;
+    -o-transform: ;
     opacity: 0;
     animation: navOpenAnimate 500ms ease-in-out forwards;
-    -webkit-animation: navOpenAnimate 500ms ease-in-out forwards;
+    -webkit-animation: ;
     transform-origin: right;
   }
 
@@ -981,6 +981,7 @@ footer {
   .contact__container {
     grid-template-columns: 1fr;
     gap: 3rem;
+    width: var(--container-width-sm);
   }
 
   .contact__list {
@@ -992,8 +993,17 @@ footer {
     width: 100%;
   }
 
+  section.contact form {
+    width: var(--container-width-sm);
+  }
+
 
   /* Footer Section Styles */
+
+  .footer__container {
+    width: var(--container-width-sm);
+  }
+
   .footer__menu {
     flex-direction: column;
     gap: 1.6rem;
